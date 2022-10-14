@@ -35,7 +35,9 @@ class LinkedList:
             return None
 
         #this walks the 2 pointers through the linked list.
-        #thile temp.next is not none, first temp and pre start at the same spot, then we move temp to the next; is it's not none, pre = temp and so on, unil we hit the end of the list. when that happens, we can delete temp e set the tail to pre
+        #thile temp.next is not none, first temp and pre start at the same spot, then we move temp to the next; 
+        # is it's not none, pre = temp and so on, unil we hit the end of the list. 
+        # when that happens, we can delete temp e set the tail to pre
         pre = self.head
         temp = self.head
         while (temp.next):
