@@ -75,11 +75,12 @@ class LinkedList:
         return temp
         
     ## WRITE SET_VALUE METHOD HERE ##
-    #                               #
-    #                               #
-    #                               #
-    #                               #
-    #################################
+    def set_value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        else: return False
     
 
 
