@@ -96,14 +96,21 @@ class LinkedList:
         return True  
 
     ## WRITE REMOVE METHOD HERE ##
-    #                            #
-    #                            #
-    #                            #
-    #                            #
-    ##############################
+    def remove(self, index):
+        if index < 0 or index > self.length:
+            return None
+        elif index == 0:
+            return self.pop_first()
+        elif index == self.length -1:
+            return self.pop()
+        else:
+            pre = self.get(index-1)
+            temp = pre.next
+            pre.next = temp.next
+            temp.next = None
+            return pre
+
   
-
-
 
 my_linked_list = LinkedList(1)
 my_linked_list.append(2)
